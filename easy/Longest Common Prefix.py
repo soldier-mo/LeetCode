@@ -1,4 +1,5 @@
 #not my solution src = https://leetcode.com/problems/longest-common-prefix/solutions/3273176/python3-c-java-19-ms-beats-99-91/
+#description: https://leetcode.com/problems/longest-common-prefix/
 class Solution:
     def longestCommonPrefix(self, strs: list[str]) -> str:
         ans=""
@@ -12,7 +13,9 @@ class Solution:
         return ans
 
 def main():
-    s = ["dog","racecar","car"]
+    s = ["flower","flow","loght"]
     solver = Solution()
     print(solver.longestCommonPrefix(s))
+    print(sorted( ["dog","racecar","car"]))
+    print(sorted(["flower","flow","loght"]))
 main()

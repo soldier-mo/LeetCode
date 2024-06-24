@@ -1,4 +1,5 @@
 
+#description: https://leetcode.com/problems/roman-to-integer/
 class Solution:
     def romanToInt(self, s: str) -> int:
         result = 0
@@ -14,9 +15,7 @@ class Solution:
 
         i = 0
         while i < len(s)-1:
-            print(result ,i)
             if RomanInt[s[i]] < RomanInt[s[i+1]]:
-                print("j")
                 result += RomanInt[s[i+1]]-RomanInt[s[i]]
                 i += 2
                 continue
