@@ -1,4 +1,4 @@
-# Definition: https://leetcode.com/problems/balanced-binary-tree/description/
+# Description: https://leetcode.com/problems/balanced-binary-tree/description/
 # Definition for a binary tree node.
 from typing import Optional
 
