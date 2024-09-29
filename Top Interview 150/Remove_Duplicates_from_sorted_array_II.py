@@ -4,16 +4,17 @@ from typing import List
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         i = 0;
-        counter = 0
+        counter = 1
         while i < len(nums)-1:
             if nums[i] == nums[i + 1]:
-                counter += 1
                 if counter >= 2:
                     nums.pop(i + 1)
-                i += 1
+                else:
+                    counter += 1
+                    i += 1
             else:
+                counter = 1
                 i += 1
-                counter = 0
         return i+1
     
 def main():
