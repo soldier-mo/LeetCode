@@ -1,4 +1,4 @@
-#description: https://leetcode.com/problems/merge-two-sorted-lists/submissions/1298926820/
+#description: https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 class Solution:
     def removeDuplicates(self, nums: list[int]) -> int:
         i = 0
