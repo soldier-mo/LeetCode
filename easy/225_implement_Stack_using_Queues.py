@@ -4,34 +4,38 @@
 class MyStack(object):
 
     def __init__(self):
-        self.queue = []
-        
+        self.queue1 = []
+        self.queue2 = []
 
     def push(self, x):
-        self.queue.append(x)
-        
+        self.queue2.append(x)
+
+        while self.queue1:
+            self.queue2.append(self.queue1.pop(0))
+
+        self.queue1, self.queue2 = self.queue2, self.queue1
 
     def pop(self):
-        return self.queue.pop()
-        
+        return self.queue1.pop(0)
 
     def top(self):
-        return self.queue[-1]
-        
+        return self.queue1[0]
 
     def empty(self):
-        return True if not self.queue else False
+        return len(self.queue1) == 0
+
 
 def main():
     obj = MyStack()
 
     obj.push(1)
-    param_4 = obj.empty()
-    param_2 = obj.top()
-    param_3 = obj.pop()
-    param_4 = obj.empty()
+    print(obj.top())
+    obj.push(2)
+    print(obj.top())
 
-    print(param_2, param_3, param_4)
+    obj.push(3)
+    print(obj.pop())
+    print(obj.empty())
 
 
 main()
