@@ -5,10 +5,6 @@
 # @return a bool
 # def isBadVersion(version):
 
-
-from turtle import right
-
-
 class Solution(object):
     def firstBadVersion(self, n):
         left = 0
