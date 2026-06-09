@@ -1,9 +1,6 @@
 # description: https://leetcode.com/problems/longest-palindromic-substring/description/
 
 
-from turtle import left, right
-
-
 class Solution(object):
     def longestPalindrome(self, s):
 
